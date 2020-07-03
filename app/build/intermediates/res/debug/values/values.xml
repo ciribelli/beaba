@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/Ciribelli/StudioProjects/Beabah/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="black_overlay">#66000000</color>
+    <declare-styleable name="ButtonBarContainerTheme"><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/></declare-styleable>
+    <!-- From: file:/Users/Ciribelli/StudioProjects/Beabah/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="adicionarImagem">Add image</string>
+    <string name="apagado">deleted</string>
+    <string name="apagar">Delete</string>
+    <string name="apagartudo">Clear all?</string>
+    <string name="app_name">My first letter</string>
+    <string name="bibliotecaOriginal">Default library</string>
+    <string name="entrarId">You should enter an identification</string>
+    <string name="exporta">Created with My first letter</string>
+    <string name="foiadicionada">was added</string>
+    <string name="gerenciador">Image manager</string>
+    <string name="imagem">Image</string>
+    <string name="importar">Add item</string>
+    <string name="meusDesenhos">My drawings</string>
+    <string name="minhasImagens">My images</string>
+    <string name="nao">No</string>
+    <string name="naoMais">You cannot add more images</string>
+    <string name="primeiraLetra">First letter</string>
+    <string name="sim">Yes</string>
+    <!-- From: file:/Users/Ciribelli/StudioProjects/Beabah/app/src/main/res/values/actionbar.xml -->
+    <eat-comment/>
+    <style name="ActionBarStyle" parent="android:Widget.Holo.Light.ActionBar">
+         <item name="android:background">#0099CC</item>
+         
+    </style>
+    <!-- From: file:/Users/Ciribelli/StudioProjects/Beabah/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+    <style name="ButtonBarButton"/>
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+    <!-- From: file:/Users/Ciribelli/StudioProjects/Beabah/app/src/main/res/values/actionbar.xml -->
+    <eat-comment/>
+    <style name="MeuTema" parent="android:Theme.DeviceDefault.Light">
+    <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+</style>
+</resources>

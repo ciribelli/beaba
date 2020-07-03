@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFCC"
+    >
+
+    <LinearLayout
+        android:id="@+id/topo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        >
+
+<!--             unidade checkbox -->
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#AAAAAA"
+            android:layout_gravity="center"
+            android:text="@string/bibliotecaOriginal" />
+        <ImageButton
+            android:id="@+id/show01"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.01"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="20dp"
+            android:background="#00000000"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/olho" />
+
+	</LinearLayout>
+		<View
+                    android:id="@+id/view_separator"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:background="#CCCCCC" />
+<!-- segundocheckbox -->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        >
+
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#AAAAAA"
+            android:layout_gravity="center"
+            android:text="@string/minhasImagens" />
+        <ImageButton
+            android:id="@+id/show02"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.01"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="20dp"
+            android:background="#00000000"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/olho" />
+
+	</LinearLayout>
+
+
+
+
+		<View
+
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:background="#CCCCCC" />
+
+
+<!-- terceiro checkbox		 -->
+                        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        >
+
+<!--             unidade checkbox -->
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#AAAAAA"
+            android:layout_gravity="center"
+            android:text="@string/meusDesenhos"            />
+
+        <ImageButton
+            android:id="@+id/show03"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.01"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="20dp"
+            android:background="#00000000"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/olho" />
+
+	</LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lane"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/topo"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:background="#0099CC"
+        >
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botao"
+        android:layout_below="@+id/lane"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        
+    </ListView>
+            
+    
+        
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/botao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            
+        <Button
+            android:id="@+id/adiciona"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/botaoadicionaimagem"
+            android:text="@string/adicionarImagem"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+        
+</RelativeLayout>

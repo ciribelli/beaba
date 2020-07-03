@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.br.beabah"
+    android:versionCode="2"
+    android:versionName="1.1"
+   >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> 
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+	
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        >
+        <activity
+            android:name="com.br.beabah.TelaPrimeiraLetra"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:hardwareAccelerated="true" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.br.beabah.TelaImporta"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth"
+            android:label="@string/importar"
+            >
+            <intent-filter>
+                <action android:name="com.example.TELAIMPORTA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+       <activity
+            android:name="com.br.beabah.TelaImportaFromCanvas"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth"
+            android:label="@string/importar"
+            >
+            <intent-filter>
+                <action android:name="com.example.TELAIMPORTAFROMCANVAS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+		<activity
+            android:name="com.br.beabah.TelaExporta"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.TELAEXPORTA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+       
+        <activity
+            android:name="com.br.beabah.TelaGerenciador"
+            android:label="@string/gerenciador"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:parentActivityName="com.br.beabah.TelaImporta"
+            >
+            <intent-filter>
+                <action android:name="com.example.TELAGERENCIADOR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+                
+        
+    </application>
+
+</manifest>

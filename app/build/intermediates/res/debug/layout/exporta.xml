@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:alpha="50"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"   
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+                     
+        <ImageButton
+        android:id="@+id/share"
+        android:src="@drawable/sharetoall"
+		android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        android:layout_width="35dp"
+        android:layout_height="35dp"        
+        
+		android:background="#00000000"
+        />
+
+        		<View
+                    android:id="@+id/view_separator"
+                    
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    
+                    android:layout_width="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:background="#CCCCCC" />
+        
+        <ImageButton
+        android:id="@+id/shareWapp"
+        android:src="@drawable/share"
+		android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        android:layout_width="35dp"
+        android:layout_height="35dp"        
+        
+		android:background="#00000000"
+         />
+        
+        
+        
+    </LinearLayout>
+
+    
+    <ImageView
+        
+        android:id="@+id/imagemExporta"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+         />
+
+</LinearLayout>
+<!-- From: file:/Users/Ciribelli/StudioProjects/Beabah/app/src/main/res/layout/exporta.xml -->

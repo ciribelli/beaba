@@ -1,0 +1,49 @@
+TASK com.br.beabah id=11621
+  ACTIVITY com.br.beabah/.TelaPrimeiraLetra c6adc8e pid=13286
+    Local Activity 6caa301 State:
+      mResumed=true mStopped=false mFinished=false
+      mChangingConfigurations=false
+      mCurrentConfig={1.0 724mcc11mnc [pt_BR] ldltr sw360dp w360dp h568dp 480dpi nrml port finger -keyb/v/h -nav/h s.245 spnvivo gidnull}
+      mLoadersStarted=true
+      FragmentManager misc state:
+        mHost=android.app.Activity$HostCallbacks@86cb632
+        mContainer=android.app.Activity$HostCallbacks@86cb632
+        mCurState=5 mStateSaved=false mDestroyed=false
+    ViewRoot:
+      mAdded=true mRemoved=false
+      mConsumeBatchedInputScheduled=true
+      mConsumeBatchedInputImmediatelyScheduled=false
+      mPendingInputEventCount=0
+      mProcessInputEventsScheduled=false
+      mTraversalScheduled=true      mIsAmbientMode=false (barrier=444)
+      android.view.ViewRootImpl$NativePreImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$ImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$NativePostImeInputStage: mQueueLength=0
+    Choreographer:
+      mFrameScheduled=true
+      mLastFrameTime=227826243 (39 ms ago)
+    View Hierarchy:
+      DecorView@278ff83[TelaPrimeiraLetra]
+        android.widget.LinearLayout{db0e500 V.E...... .......D 0,0-1080,1776}
+          android.view.ViewStub{817b139 G.E...... ......I. 0,0-0,0 #10203fa android:id/action_mode_bar_stub}
+          android.widget.FrameLayout{52c037e V.E...... .......D 0,72-1080,1776 #1020002 android:id/content}
+            android.widget.RelativeLayout{e4210df V.E...... .......D 0,0-1080,1704}
+              android.widget.FrameLayout{ebf512c V.E...... .......D 0,0-1080,1704 #7f090001 app:id/main}
+                com.br.beabah.Caderno{63927f5 V.ED..... ......ID 0,0-1080,1704}
+                android.widget.ImageView{d00d98a V.ED..... ........ 162,0-1080,1065 #7f090002 app:id/image}
+              android.widget.FrameLayout{660dbfb V.E...... ........ 0,177-1080,1298 #7f090003 app:id/quadro}
+                com.br.beabah.Desenho{9665418 V.ED..... ........ 0,0-1080,1121}
+              android.widget.LinearLayout{c14e71 V.E...... .......D 0,1298-1080,1704 #7f090004 app:id/botaoteste}
+                android.widget.LinearLayout{49b0456 V.E...... .......D 0,0-1080,406 #7f090007 app:id/botoes}
+                  com.br.beabah.Baloes{1d73cd7 V.ED..... ......ID 0,0-1080,406}
+              android.widget.LinearLayout{27899c4 V.E...... ........ 0,0-1080,177 #7f090005 app:id/Top}
+                android.widget.Button{dcb60ad VFED..C.. ........ 150,0-390,177 #7f09000b app:id/list}
+                android.widget.Button{9db0fe2 VFED..C.. ........ 390,0-750,177 #7f090009 app:id/draw}
+                android.widget.Button{be8cf73 VFED..C.. ........ 750,0-1080,177 #7f09000c app:id/novo}
+              android.widget.ProgressBar{7478e30 I.ED..... ......ID 468,780-612,924 #7f090023 app:id/progressBar1}
+        android.view.View{fea5aa9 V.ED..... ........ 0,1776-1080,1920 #1020030 android:id/navigationBarBackground}
+        android.view.View{61e482e V.ED..... ........ 0,0-1080,72 #102002f android:id/statusBarBackground}
+    Looper (main, tid 1) {676efcf}
+      Message 0: { when=-16ms barrier=444 }
+      Message 1: { when=-7ms callback=android.view.Choreographer$FrameDisplayEventReceiver target=android.view.Choreographer$FrameHandler }
+      (Total messages: 2, polling=false, quitting=false)
